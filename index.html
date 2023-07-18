@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/272a32f03d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Profile</title>
+</head>
+<body>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/logoyatin.png" alt="logo" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Javascript Developer</p>
+        <h1>Hello, I am <span>Yatin Nagpal</span> <br> From Australia</h1>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------- About -------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/yatin.jpg" alt="user image">
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque repellat inventore, quibusdam excepturi voluptates deserunt, quo ut distinctio facere eum nulla accusantium minus consectetur, accusamus nobis. Similique, doloribus totam.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+              <li><span>Web Devolopment</span><br>Designing web/app interfaces</li>
+              <li><span>App Development</span><br>Designing web/app interfaces</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>UI/UX2</span><br>Designing web/app interfaces</li>
+              <li><span>Web Devolopment</span><br>Designing web/app interfaces</li>
+              <li><span>App Development</span><br>Designing web/app interfaces</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>UI/UX3</span><br>Designing web/app interfaces</li>
+              <li><span>Web Devolopment</span><br>Designing web/app interfaces</li>
+              <li><span>App Development</span><br>Designing web/app interfaces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-----------------------Services------------------------>
+  <div id="services">
+    <div class="container">
+      <h2 class="sub-title">My Services</h2>
+      <div class="services-list">
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam odio veniam et dignissimos quisquam excepturi saepe, distinctio quasi corrupti totam, ex iusto, in unde cupiditate? Veniam qui nesciunt debitis.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-bots"></i>
+          <h3>Web Scraping</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam odio veniam et dignissimos quisquam excepturi saepe, distinctio quasi corrupti totam, ex iusto, in unde cupiditate? Veniam qui nesciunt debitis.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-bots"></i>
+          <h3>Web Crawling</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam odio veniam et dignissimos quisquam excepturi saepe, distinctio quasi corrupti totam, ex iusto, in unde cupiditate? Veniam qui nesciunt debitis.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-----------------------Portfolio------------------------>
+  <div id="portfolio">
+    <!-- <h2 class="sub-title">My Work</h2> -->
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
