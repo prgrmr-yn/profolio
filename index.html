@@ -9,17 +9,20 @@
 </head>
 <body>
 
+  <!----------------------Header------------------------->
   <div id="header">
     <div class="container">
       <nav>
         <img src="./images/logoyatin.png" alt="logo" class="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Services</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
       </nav>
       <div class="header-text">
         <p>Javascript Developer</p>
@@ -104,7 +107,113 @@
 
   <!-----------------------Portfolio------------------------>
   <div id="portfolio">
-    <!-- <h2 class="sub-title">My Work</h2> -->
+    <div class="container">
+
+
+      <h2 class="sub-title">My Work</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="./images/work-1.png" alt="workimage">
+          <div class="layer">
+            <h4>Social Media App</h4>
+            <p>The app is pretty cool. The app is pretty cool. The app is pretty cool. The app is pretty cool</p>
+            <a href="#">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-1.png" alt="workimage">
+          <div class="layer">
+            <h4>Social Media App</h4>
+            <p>The app is pretty cool</p>
+            <a href="#">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-1.png" alt="workimage">
+          <div class="layer">
+            <h4>Social Media App</h4>
+            <p>The app is pretty cool</p>
+            <a href="#">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-1.png" alt="workimage">
+          <div class="layer">
+            <h4>Social Media App</h4>
+            <p>The app is pretty cool</p>
+            <a href="#">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-1.png" alt="workimage">
+          <div class="layer">
+            <h4>Social Media App</h4>
+            <p>The app is pretty cool</p>
+            <a href="#">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/work-1.png" alt="workimage">
+          <div class="layer">
+            <h4>Social Media App</h4>
+            <p>The app is pretty cool</p>
+            <a href="#">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-----------------------Contact------------------------>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 class="sub-title">Contact Me</h2>
+          <p><i class="fa-solid fa-paper-plane"></i>contact@contact.com</p>
+          <p><i class="fa-solid fa-phone"></i>0404040404</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your email(optional)">
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright• Yatin. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
   </div>
 
   <script src="./main.js"></script>
