@@ -181,10 +181,15 @@
   <div id="contact">
     <div class="container">
       <div class="row">
-        <div class="contact-left">
+        <div class="contact-right">
           <h2 class="sub-title">Contact Me</h2>
-          <p><i class="fa-solid fa-paper-plane"></i>contact@contact.com</p>
-          <p><i class="fa-solid fa-phone"></i>0404040404</p>
+          <form name="submit-to-google-sheet">
+            <input id="name" type="text" name="Name" placeholder="Your Name" required>
+            <input id="email" type="email" name="Email" placeholder="Your email(optional)">
+            <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
           <div class="social-icons">
             <a href="#">
               <i class="fa-brands fa-linkedin"></i>
@@ -200,19 +205,11 @@
             </a>
           </div>
         </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" placeholder="Your email(optional)">
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
+
       </div>
     </div>
     <div class="copyright">
-      <p>Copyright• Yatin. Made with <i class="fa-solid fa-heart"></i></p>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Yatin</p>
     </div>
   </div>
 

@@ -296,26 +296,13 @@ nav ul li a:hover::after{
 
 
 /* ----------contact----------- */
-.contact-left{
-  flex-basis: 35%;
-}
 
 .contact-right{
-  flex-basis: 60%;
+  flex-basis: 99%;
 }
 
-.contact-left h2{
+.contact-right h2{
   font-size: 24px;
-}
-
-.contact-left p{
-  margin-top: 30px;
-}
-
-.contact-left p i{
-  color: #ff004f;
-  margin-right: 15px;
-  font-size: 25px;
 }
 
 .social-icons{
@@ -452,7 +439,7 @@ nav .fa-solid{
     margin-right: 20px;
   }
 
-  .contact-left, .contact-right{
+  .contact-right{
     flex-basis: 100%;
   }
 

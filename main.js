@@ -29,6 +29,9 @@ function closeMenu() {
 const scriptURL = 'https://script.google.com/macros/s/AKfycbw6hGm-IYpYdpKCNOJtxmvBfYzNAUSUZsgptJ2dpy409r9kUZynMAbphso0rVEqouZb/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg= document.getElementById('msg')
+const inputFields = document.getElementsByName('input')
+console.log(inputFields);
+console.log('hi');
 
 form.addEventListener('submit', e => {
   e.preventDefault()
@@ -38,7 +41,6 @@ form.addEventListener('submit', e => {
       setTimeout(() => {
         msg.textContent='';
       }, 5000)
-      form.reset()
     })
     .catch(error => console.error('Error!', error.message))
 });
