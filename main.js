@@ -29,14 +29,23 @@ function closeMenu() {
 const scriptURL = 'https://script.google.com/macros/s/AKfycbw6hGm-IYpYdpKCNOJtxmvBfYzNAUSUZsgptJ2dpy409r9kUZynMAbphso0rVEqouZb/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg= document.getElementById('msg')
-const inputFields = document.getElementsByName('input')
-console.log(inputFields);
-console.log('hi');
+let namee = document.getElementById('name')
+let email = document.getElementById('email')
+let message = document.getElementById('message')
+console.log([namee, email, message]);
 
 form.addEventListener('submit', e => {
+  document.getElementById('submit-btn').textContent = "submitting... "
+
   e.preventDefault()
+  console.log(new FormData(form));
+
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
+      for(const field of [namee,email,message]){
+        field.value = '';
+      }
+      document.getElementById('submit-btn').textContent = "submit"
       msg.textContent='Message Sent Successfully';
       setTimeout(() => {
         msg.textContent='';
