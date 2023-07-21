@@ -35,7 +35,7 @@ let message = document.getElementById('message')
 console.log([namee, email, message]);
 
 form.addEventListener('submit', e => {
-  document.getElementById('submit-btn').textContent = "submitting... "
+  document.getElementById('submit-btn').textContent = "Submitting... "
 
   e.preventDefault()
   console.log(new FormData(form));
@@ -45,7 +45,7 @@ form.addEventListener('submit', e => {
       for(const field of [namee,email,message]){
         field.value = '';
       }
-      document.getElementById('submit-btn').textContent = "submit"
+      document.getElementById('submit-btn').textContent = "Submit"
       msg.textContent='Message Sent Successfully';
       setTimeout(() => {
         msg.textContent='';
